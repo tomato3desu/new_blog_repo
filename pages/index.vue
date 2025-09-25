@@ -75,7 +75,7 @@ const allTags = computed<string[]>(() => {
 </script>
 <template>
     <div class="bg-[url(/images/dot_saturn.png)] min-h-screen">
-        <div class="flex gap-4 p-4">
+        <div class="p-4 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-4">
             <button
             class="px-3 py-1 rounded bg-gray-200"
             :class="{ 'bg-blue-400 text-white': selectedTag === null }"
@@ -84,7 +84,7 @@ const allTags = computed<string[]>(() => {
             <button
             v-for="tag in allTags"
             :key="tag"
-            class="px-3 py-1 rounded bg-gray-200"
+            class="px-3 py-1 rounded bg-gray-200 break-words"
             :class="{ 'bg-blue-400 text-white': selectedTag === tag }"
             @click="selectedTag = tag"
             >{{ tag }}</button>
