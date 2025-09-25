@@ -10,7 +10,7 @@ interface Article {
   body: any
   meta: {
     image: string
-    tag: string[]
+    tags: string[]
     date: string
   }
 }
@@ -29,7 +29,7 @@ const { data:article } = await useAsyncData<Article>(`artile-${slug}`, async () 
         body: collection!.body,
         meta: {
             image: collection!.meta.image as string,
-            tag: collection!.meta.tag as string[],
+            tags: collection!.meta.tags as string[],
             date: collection!.meta.date as string
         }
     }

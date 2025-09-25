@@ -6,7 +6,7 @@ interface Article {
   body: any
   meta: {
     image: string
-    tag: string[]
+    tags: string[]
     date: string
   }
 }
@@ -14,6 +14,9 @@ interface Article {
 const { article } = defineProps<{
     article: Article
 }>()
+
+//関連記事表示
+
 </script>
 <template>
     <div class="prose mx-auto bg-white rounded-xl p-2 min-h-screen">
@@ -26,5 +29,10 @@ const { article } = defineProps<{
         />
         <p class="mt-6 text-sm text-gray-500">投稿日: {{ article?.meta.date }}</p>
         <ContentRenderer :value="article?.body" class="prose"/>
+
+        <!-- footer -->
+        <div class="h-10 flex justify-center items-center">
+            <NuxtLink to="/" class="text-blue-600 underline">top</NuxtLink>
+        </div>
     </div>
 </template>

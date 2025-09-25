@@ -2,7 +2,7 @@
 title: nuxt × spring boot 
 description: nuxt3 × spring bootでプロジェクトを作成する方法（開発用）
 image: "images/springicon.jpg"
-tag: ["nuxt", "spring boot"]
+tags: ["nuxt", "spring boot"]
 date: 2025-09-22
 ---
 

@@ -4,8 +4,8 @@ interface Article {
   description: string
   path: string
   meta: {
-    image?: string
-    tag?: string[]
+    image: string
+    tags: string[]
     date: string
   }
 }
@@ -32,10 +32,10 @@ const goToArticle = () => {
         <p class="text-gray-600 mt-2 break-words">
         {{ article.description }}
         </p>
-        <small class="text-sm mt-2">{{ article.meta.date }}</small>
+        <small class="text-sm mt-2 text-gray-600">{{ article.meta.date }}</small>
         <div class="flex gap-3">
             <small 
-            v-for="tag in article.meta.tag"
+            v-for="tag in article.meta.tags"
             class="text-sm text-sky-400">#{{ tag }}</small>
         </div>
     </NuxtLink>

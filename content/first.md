@@ -2,8 +2,8 @@
 title: nuxt3 × tailwindcss でgoogle fontを利用する方法
 description: nuxt3 × tailwindcss でgoogle fontを利用する方法
 image: "images/nuxticon.jpg"
-tag: ["nuxt", "tailwindcss"]
-date: 2025-09-22
+tags: ["nuxt", "tailwindcss"]
+date: 2025-09-21
 ---
 
 # nuxt3 × tailwindcss でgoogle fonts を設定する方法
