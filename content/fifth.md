@@ -9,7 +9,8 @@ date: '2025-09-23'
 
 # github
 
-1. リモートリポジトリ作成
+**リモートリポジトリ作成**
+
 github で右上の+ボタンを押し、new repository -> create repository
 ↓のコマンドが出てくるのでそれに沿ってリモートリポジトリにpush
 
@@ -31,8 +32,7 @@ git branch -M main
 git push -u origin main
 ```
 
-・git branch -m ブランチ名: ブランチ名を変更
-・git remote add <リモートリポジトリ名> <リモートリポジトリURL>：ローカルリポジトリとリモートリポジトリを紐づけ
-・git push -u <リモートリポジトリ名> <ローカルブランチ名>:<リモートブランチ名（同じ場合省略可能）>
-
+- git branch -m ブランチ名: ブランチ名を変更
+- git remote add <リモートリポジトリ名> <リモートリポジトリURL>：ローカルリポジトリとリモートリポジトリを紐づけ
+- git push -u <リモートリポジトリ名> <ローカルブランチ名>:<リモートブランチ名（同じ場合省略可能）>  
 git push -u の後は git push で更新可能

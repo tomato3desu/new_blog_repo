@@ -8,9 +8,9 @@ date: 2025-09-21
 
 # nuxt3 × tailwindcss でgoogle fonts を設定する方法
 
-1.google fonts で好きなフォントをカートに追加し、get embed code　をクリック
-2.Embed code in the <head> of your html の一番下のリンクからhrefをコピー
-3.assets/css/main.cssでimport
+1. google fonts で好きなフォントをカートに追加し、get embed code　をクリック
+2. Embed code in the <head> of your html の一番下のリンクからhrefをコピー
+3. assets/css/main.cssでimport
 
 
 assets/main.css
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-09-19',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'], 
-  modules: ['@nuxt/image', '@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss'],
 })
 ```
 
